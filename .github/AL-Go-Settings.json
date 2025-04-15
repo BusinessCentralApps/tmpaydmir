@@ -1,0 +1,27 @@
+{
+  "templateUrl": "https://github.com/businesscentralapps/tmpiWc6d0-PTE@main",
+  "githubRunnerShell": "powershell",
+  "incrementalBuilds": {
+    "onPush": true
+  },
+  "useCompilerFolder": true,
+  "conditionalSettings": [
+    {
+      "workflows": [
+        "CI/CD"
+      ],
+      "settings": {
+        "workflowConcurrency": [
+          "group: ${{ github.workflow }}-${{ github.ref }}",
+          "cancel-in-progress: true"
+        ]
+      }
+    }
+  ],
+  "MicrosoftTelemetryConnectionString": "",
+  "type": "PTE",
+  "doNotPublishApps": true,
+  "githubRunner": "windows-latest",
+  "UseProjectDependencies": true,
+  "useApproximateVersion": true
+}

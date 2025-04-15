@@ -23,5 +23,6 @@
   "doNotPublishApps": true,
   "githubRunner": "windows-latest",
   "UseProjectDependencies": true,
-  "useApproximateVersion": true
+  "useApproximateVersion": true,
+  "templateSha": "d9459eceecd6cd01c493d6951c8428559f7334d3"
 }
